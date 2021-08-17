@@ -1,12 +1,12 @@
 import './App.css';
-import JSXDemo from './JSXDemo';
+import NumPicker from './NumPicker';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-        <JSXDemo />
+        <NumPicker />
 
       </header>
     </div>
