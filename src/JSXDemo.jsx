@@ -6,7 +6,6 @@ class JSXDemo extends Component {
         return ( 
             <div>
                 <h1>My Image</h1>
-                <img src="" />
             </div>
          );
     }
