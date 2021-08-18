@@ -1,11 +1,14 @@
 import {Component} from 'react';
 
 class Hello extends Component {
-    state = {  }
-
     render() { 
+        let bangs = "!".repeat(this.props.bangs ? this.props.bangs : 1)        
+
         return (  
-            <h2>Hi: {this.props.to} from: {this.props.from}</h2>
+            <div>
+                <p>Hi: {this.props.to} from: {this.props.from}{bangs}</p>
+                <img src={this.props.img} alt="" />
+            </div>
         );
     }
 }
