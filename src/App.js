@@ -1,12 +1,14 @@
 import './App.css';
-import NumPicker from './NumPicker';
+import Hello from './Hello';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-        <NumPicker />
+        <Hello to="Ringo" from="Paul" />
+
+        <Hello to="Cher" from="Sonny" />
 
       </header>
     </div>
