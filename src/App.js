@@ -1,14 +1,16 @@
+import Machine from './additionalComponents/Machine';
 import './App.css';
-import Friend from './Friend';
 
 function App() {
   return (
     <div className="App">
 
-      <Friend
-        name="Elton"
-        hobbies={['Piano', 'Singing', 'Dancing']}
-      />        
+    
+      <Machine 
+        s1="x"
+        s2="x"
+        s3="x"
+      />      
 
     </div>
   );
