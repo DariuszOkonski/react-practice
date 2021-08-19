@@ -9,10 +9,11 @@ class Machine extends Component {
             color: 'yellow',
             fontSize: '3rem'
         }
+        
         return ( 
             <div className="Machine">
                 <p style={par}>{s1} {s2} {s3}</p>
-                <p>{isWinner ? "Winner!" : "Looser!"}</p>
+                <p className={isWinner ? "red" : "blue"}>{isWinner ? "Winner!" : "Looser!"}</p>
             </div>
          );
     }

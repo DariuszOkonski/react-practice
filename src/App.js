@@ -8,7 +8,7 @@ function App() {
     
       <Machine 
         s1="x"
-        s2="x"
+        s2="z"
         s3="x"
       />      
 
