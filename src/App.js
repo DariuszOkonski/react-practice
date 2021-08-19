@@ -1,16 +1,26 @@
 import './App.css';
-import Hello from './Hello';
+import Machine from './slotMachines/Machine';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-        <Hello 
-          to="Ringo" 
-          from="Paul" 
-          bangs={4}
-          img="https://cdn.pixabay.com/photo/2020/04/27/11/31/dog-5099414_960_720.jpg" 
+        <Machine 
+          s1="x"
+          s2="y"
+          s3="z"
+        />
+        <Machine 
+          s1="z"
+          s2="z"
+          s3="z"
+        />
+        
+        <Machine 
+          s1="x"
+          s2="x"
+          s3="z"
         />
 
       </header>
