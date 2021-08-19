@@ -4,7 +4,7 @@ import Machine from './slotMachines/Machine';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+        <h1>Slot Machines!</h1>
 
         <Machine 
           s1="x"
@@ -23,7 +23,6 @@ function App() {
           s3="z"
         />
 
-      </header>
     </div>
   );
 }
