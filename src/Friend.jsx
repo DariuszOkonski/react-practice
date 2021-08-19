@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Friend extends Component {
+    static defaultProps = {
+        name: "John",
+        hobbies: ['none']
+    }
+
     render() { 
         const { name, hobbies } = this.props;
         return ( 
