@@ -1,17 +1,10 @@
 import React, { Component } from 'react'
-import Pokecard from './Pokecard'
+import Pokedex from './Pokedex';
 
 class PokemondexMain extends Component {
     render() { 
         return ( 
-            <div>
-                <Pokecard 
-                    id={4}
-                    name='Charmander'
-                    type='fire'
-                    exp={62}
-                />
-            </div>
+            <Pokedex />
          );
     }
 }
