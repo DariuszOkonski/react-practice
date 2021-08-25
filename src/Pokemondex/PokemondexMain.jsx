@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 
 class PokemondexMain extends Component {
     render() { 
         return ( 
-            <Pokedex />
+            <Pokegame />
          );
     }
 }
