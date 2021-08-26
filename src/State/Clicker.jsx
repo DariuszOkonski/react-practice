@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 class Clicker extends Component {
+    NUMBER = 7
     constructor(props) {
         super(props);
         this.state = {
@@ -21,7 +22,7 @@ class Clicker extends Component {
             <div>
                 <h1>Number: {this.state.number}</h1>
                 {
-                    (this.state.number !== 7) ?
+                    (this.state.number !== this.NUMBER) ?
                         <button onClick={this.handleClick}>Click Me</button> :
                         <h2>You Won</h2>
                 }
