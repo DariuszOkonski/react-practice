@@ -6,7 +6,7 @@ class Game extends Component {
         this.state = {
             score: 0,
             gameOver: false
-        }
+        };
     }
 
     render() { 
