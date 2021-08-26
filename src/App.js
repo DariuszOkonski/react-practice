@@ -1,11 +1,14 @@
 import './App.css';
-import Game from './State/Game';
+import Die from './DiceGame/Die';
 
 function App() {
   return (
     <div className="App">
-        <h1>Hello</h1>
-        <Game />
+
+        <Die face="five" />
+        <Die face="six" />
+        <Die face="four" />
+
     </div>
   );
 }
