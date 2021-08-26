@@ -1,10 +1,11 @@
 import './App.css';
-import PokemondexMain from './Pokemondex/PokemondexMain';
+import Game from './State/Game';
 
 function App() {
   return (
     <div className="App">
-      <PokemondexMain />
+        <h1>Hello</h1>
+        <Game />
     </div>
   );
 }
