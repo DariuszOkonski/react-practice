@@ -14,11 +14,9 @@ class IconList extends Component {
     }
 
     addIcon() {
-        console.log('add icon')
         let idx = Math.floor(Math.random() * this.props.options.length);
         let newIcon = this.props.options[idx];
         let icons = [...this.state.icons, newIcon]
-        console.log(icons)
 
         this.setState({
             icons
