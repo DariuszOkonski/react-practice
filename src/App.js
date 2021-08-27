@@ -1,11 +1,11 @@
 import './App.css';
-import IconList from './Section8/IconList';
+import Lottery from './Lottery/Lottery';
 
 function App() {
   return (
     <div className="App">
 
-      <IconList />
+      <Lottery />
 
     </div>
   );
