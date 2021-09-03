@@ -1,14 +1,20 @@
-import './App.css';
-import Lottery from './Lottery/Lottery';
 
-function App() {
+import React, { useState } from 'react';
+import './App.css';
+
+
+const App = () => {
+  const [text, setText] = useState('')
+
+  const handleOnClick = () => {
+    const letter = 'a';
+    setText(text + letter);
+  }
+
   return (
     <div className="App">
-
-      <Lottery />
-
-      <Lottery title="Mini Daily" maxNum={10} numBalls={4} />
-
+      <button onClick={handleOnClick}>Dodaj "A"</button>
+      <h1>{text}</h1>
     </div>
   );
 }
