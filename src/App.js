@@ -1,20 +1,14 @@
 
 import React, { useState } from 'react';
+import Counter from './aaaSamuraj/Counter';
 import './App.css';
 
 
 const App = () => {
-  const [text, setText] = useState('')
-
-  const handleOnClick = () => {
-    const letter = 'a';
-    setText(text + letter);
-  }
-
+  
   return (
     <div className="App">
-      <button onClick={handleOnClick}>Dodaj "A"</button>
-      <h1>{text}</h1>
+      <Counter result={0} />
     </div>
   );
 }
