@@ -1,15 +1,14 @@
 
-import React, { useState } from 'react';
-import Counter from './aaaSamuraj/Counter';
+import React from 'react';
 import './App.css';
 
 
-const App = () => {
-  
+const App = () => {  
   return (
     <div className="App">
-      <Counter result={0} />
+      <h1>Hello world</h1>
     </div>
+  
   );
 }
 
