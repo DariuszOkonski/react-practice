@@ -3,27 +3,23 @@ import { PureComponent } from 'react';
 import { AppContext } from './AppContext'
 
 class UserInfo extends PureComponent {    
+    static contextType = AppContext;
 
     render() { 
         return (
-            <AppContext.Consumer>
-            {
-                ({isUserLogged, toggleLoggedState}) => (
-                    <div>
-                        <p>
-                            Użytkownik jest: 
-                            {
-                                isUserLogged 
-                                ? ' zalogowany' 
-                                : ' niezalogowany'
-                            }
-                        </p>
-                    </div>
-                )    
-            }
-            </AppContext.Consumer>
-        );
+            <div>
+                <p>
+                    Użytkownik jest: 
+                    {
+                        this.context.isUserLogged 
+                        ? ' zalogowany' 
+                        : ' niezalogowany'
+                    }
+                </p>
+            </div>
+        )    
     }
 }
+
  
 export default UserInfo;
