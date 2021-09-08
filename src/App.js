@@ -1,5 +1,5 @@
 import React from 'react';
-import AppClass from './aaaSamuraj/AppClass';
+import AppClass from './aaaSamuraj/Context/AppClass';
 import './App.css';
 
 
