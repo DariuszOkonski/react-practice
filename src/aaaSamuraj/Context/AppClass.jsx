@@ -9,16 +9,14 @@ const AppClass = () => {
     const [isUserAdult, setIsUserAdult] = useState(true);
     
 
-    const handleToggleStateIsLogged = () => setIsUserLogged(!isUserLogged);
+    const toggleLoggedState = () => setIsUserLogged(prevValue => !prevValue);
 
-    const handleIsUserAdult = () => setIsUserAdult(!isUserAdult);
+    const handleIsUserAdult = () => setIsUserAdult(prevValue => !prevValue);
 
     return (
         <div>
             <AppContext.Provider value={{
-                isUserLogged: isUserLogged,
-                isUserAdult: isUserAdult,
-                toggleLoggedState: handleToggleStateIsLogged
+                isUserLogged, isUserAdult, toggleLoggedState
             }}>
                 <UserInfo />
                 <Button />
