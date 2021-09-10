@@ -1,18 +1,15 @@
-import React from 'react'
-import { PureComponent } from 'react';
+import React, { useContext } from 'react'
 import { AppContext } from './AppContext';
 
-class Button extends PureComponent {
-    static contextType = AppContext;
-
-    render() { 
-        return (
-            <button onClick={this.context.toggleLoggedState}>
-                Przełącz stan użytkownika
-            </button>
-                        
-        );
-    }
+const Button = () => {
+    const {toggleLoggedState} = useContext(AppContext)
+    
+    return (
+        <button onClick={toggleLoggedState}>
+            Przełącz stan użytkownika
+        </button>
+                    
+    );
 }
  
 export default Button;
