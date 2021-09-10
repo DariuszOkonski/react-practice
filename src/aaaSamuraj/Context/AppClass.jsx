@@ -1,37 +1,16 @@
-import React, { useState } from 'react'
-import { AppContext, defaultObject } from './AppContext';
+import React from 'react'
+import AppProvider from './AppContext';
 
 import Button from './Button';
 import UserInfo from './UserInfo';
 
-const AppClass = () => {    
-    const [isUserLogged, setIsUserLogged] = useState(defaultObject.isUserLogged);
-    const [isUserAdult, setIsUserAdult] = useState(true);
-    
-
-    const toggleLoggedState = () => setIsUserLogged(prevValue => !prevValue);
-
-    const handleIsUserAdult = () => setIsUserAdult(prevValue => !prevValue);
-
-    return (
+const AppClass = () => (    
         <div>
-            <AppContext.Provider value={{
-                isUserLogged, isUserAdult, toggleLoggedState
-            }}>
+            <AppProvider>
                 <UserInfo />
                 <Button />
-            </AppContext.Provider>
-            
-            <AppContext.Provider value={{
-                isUserLogged: isUserAdult,
-                toggleLoggedState: handleIsUserAdult
-            }}>
-                <UserInfo />
-                <Button />
-            </AppContext.Provider>
-        </div>
-            
-    );
-}
+            </AppProvider>
+        </div>            
+);
  
 export default AppClass;

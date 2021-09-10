@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import { AppContext } from './AppContext';
+import{ AppContext } from './AppContext';
+
 
 const Button = () => {
     const {toggleLoggedState} = useContext(AppContext)

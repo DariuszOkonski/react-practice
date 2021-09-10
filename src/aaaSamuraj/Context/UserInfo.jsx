@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { AppContext } from './AppContext'
 
+
 const UserInfo = () => {    
     const {isUserLogged} = useContext(AppContext)
 

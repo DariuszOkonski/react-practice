@@ -1,9 +1,18 @@
-import { createContext } from "react";
+import React, { createContext, useState } from "react";
 
-export const defaultObject = {
-    isUserLogged: false,
-    isUserAdult: true,
-    toggleLoggedState: () => {}
+export const AppContext = createContext();
+
+const AppProvider = ({children}) => {
+    const [isUserLogged, setIsUserLogged] = useState(false);
+    
+    const toggleLoggedState = () => {
+        setIsUserLogged(prevValue => !prevValue);
+    }
+    return(
+        <AppContext.Provider value={{ isUserLogged, toggleLoggedState }}>
+            {children}
+        </AppContext.Provider>
+    )
 }
 
-export const AppContext = createContext(defaultObject);
+export default AppProvider;
