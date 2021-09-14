@@ -1,12 +1,12 @@
 import React from 'react';
-import AppClass2 from './aaaSamuraj/AppClass2';
+import AppClass3 from './aaaSamuraj/AppClass3';
 import './App.css';
 
 
 const App = () => {  
   return (
     <div className="App">
-      <AppClass2 />
+      <AppClass3 />
     </div>
   
   );
