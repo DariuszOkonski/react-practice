@@ -1,4 +1,4 @@
-import React, { useRef, createRef, useState } from 'react';
+import React, { useRef, createRef, useState, useEffect } from 'react';
 
 const AppClass3 = () => {
     const [counter, setCounter] = useState(0)
@@ -16,7 +16,9 @@ const AppClass3 = () => {
     console.log(textInputRef.current)
     console.log(numberInputRef.current)
 
-
+    useEffect(() => {
+        textInputRef.current.focus();
+    }, [])
 
     return ( 
         <div>
