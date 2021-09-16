@@ -1,12 +1,12 @@
 import React from 'react';
-import App3 from './aaaSamuraj/ReducerEx/App3';
+import App4 from './aaaSamuraj/Memo/App4';
 import './App.css';
 
 
 const App = () => {  
   return (
     <div className="App">
-      <App3 />
+      <App4 />
     </div>
   
   );
